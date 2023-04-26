@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <script>
+          function openSlideMenu(){
+             document.getElementById('menu').style.width='250px';
+             document.getElementById('content').style.marginLeft='250px';
+          }
+          function closeSlideMenu(){  
+            document.getElementById('menu').style.width='0';
+             document.getElementById('content').style.marginLeft='0';
+          }
+        </script>
+              <style> 
+            .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;} 
+    .first{box-shadow:40px 10px 30px tomato;}
+     .second{box-shadow:40px 40px 40px goldenrod;}
+     .third{box-shadow:40px 40px 40px limegreen;}
+     .fourth{box-shadow:40px 40px 40px mediumaquamarine;}
+     .fifth{box-shadow:40px 40px 40px saddlebrown;}
+     .img1{margin-left: 1150px; margin-top: -30px;height:350px;}
+     .card1{background-color:tomato;margin-top:-340px;margin-right:330px;margin-left:20px;height:330px ;}
+     .img2{margin-left:1150px; margin-top:50px; margin-bottom:110px;height:370px; width:350px;}
+     .card2{background-color:gold;margin-top:-459px;margin-right:280px;margin-left:25px;height:330px;width: 1130px;}
+     .img3{margin-left:1150px; margin-top:50px; margin-bottom:110px;height:350px; width:350px;}
+     .card3{background-color:chartreuse;margin-top:-449px;margin-right:280px;margin-left:25px;height:330px;width: 1130px;}
+     .img4{height:350px; width:350px;margin-left:1150px; margin-top:50px; margin-bottom:110px;}
+     .card4{background-color:cyan;margin-top:-449px;margin-right:280px;margin-left:25px;height:330px;width: 1130px;}
+     .img5{ height:350px; width:350px;margin-left:1150px; margin-top:50px; margin-bottom:110px;}
+     .card5{background-color:sandybrown;margin-top:-449px;margin-right:280px;margin-left:25px;height:330px;width: 1130px;}
+     @media(max-width:1295px)
+     {    .first{margin-top:70px;}
+         .img1{margin-left: 910px;margin-top:-30px;width:360px; height: 380px;margin-bottom:-100px;margin-right:0px;}
+         .card1{margin-right:0px;margin-left:-5px;height:360px;width:920px;}
+         .second{margin-top:70px;}
+         .img2{margin-left: 910px;margin-top:-30px;width:360px; height: 380px;margin-bottom:-100px;}
+         .card2{margin-right:0px;margin-left:-5px;height:360px;width:920px;margin-top:-273px;}
+         .third{margin-top:70px;}
+         .img3{margin-left: 910px;margin-top:-30px;width:360px; height: 380px;margin-bottom:-100px;}
+         .card3{margin-right:0px;margin-left:-5px;height:360px;width:920px;margin-top:-273px;}
+         .fourth{margin-top:70px;}
+         .img4{margin-left: 910px;margin-top:-30px;width:360px; height: 380px;margin-bottom:-100px;}
+         .card4{margin-right:0px;margin-left:-5px;height:360px;width:920px;margin-top:-273px;}
+         .fifth{margin-top:70px;margin-bottom:100px;}
+         .img5{margin-left: 910px;margin-top:-30px;width:360px; height: 380px;margin-bottom:-100px;}
+         .card5{margin-right:0px;margin-left:-5px;height:360px;width:920px;margin-top:-273px;}
+     }
+     @media(max-width:992px){
+        .first{margin-top:70px;}
+         .img1{margin-left: 910px;margin-top:-30px;width:360px; height:450px;margin-bottom:-170px;margin-left:590px;}
+         .card1{margin-right:0px;margin-left:-10px;height:430px;width:600px;}
+         .second{margin-top:70px;}
+         .img2{margin-left: 910px;margin-top:-30px;width:370px; height:470px;margin-bottom:-190px;margin-left:590px;}
+         .card2{margin-right:0px;margin-left:-10px;height:450px;width:600px;}
+         .third{margin-top:70px;}
+         .img3{margin-left: 910px;margin-top:-30px;width:370px; height:470px;margin-bottom:-190px;margin-left:590px;}
+         .card3{margin-right:0px;margin-left:-10px;height:450px;width:600px;}
+         .fourth{margin-top:70px;}
+         .img4{margin-left: 910px;margin-top:-30px;width:370px; height:470px;margin-bottom:-190px;margin-left:590px;}
+         .card4{margin-right:0px;margin-left:-10px;height:450px;width:600px;}
+         .fifth{margin-top:70px;}
+         .img5{margin-left: 910px;margin-top:-30px;width:370px; height:470px;margin-bottom:-190px;margin-left:590px;}
+         .card5{margin-right:0px;margin-left:-10px;height:450px;width:600px;}
+     }
+     @media(max-width:503px){
+        .first{margin-top:70px;}
+         .img1{margin-left: 910px;margin-top:-20px;width:260px; height:490px;margin-bottom:-220px;margin-left:203px;}
+         .card1{margin-right:0px;margin-left:-11px;height:490px;width:220px; font-size: 10px;}
+         .second{margin-top:70px;}
+         .img2{margin-left: 910px;margin-top:-20px;width:260px; height:490px;margin-bottom:-216px;margin-left:203px;}
+         .card2{margin-right:0px;margin-left:-11px;height:490px;width:220px; font-size:9.2px;}
+         .third{margin-top:70px;}
+         .img3{margin-left: 910px;margin-top:-20px;width:260px; height:490px;margin-bottom:-216px;margin-left:203px;}
+         .card3{margin-right:0px;margin-left:-11px;height:490px;width:220px; font-size:9.5px;}
+         .fourth{margin-top:70px;}
+         .img4{margin-left: 910px;margin-top:-20px;width:260px; height:490px;margin-bottom:-216px;margin-left:203px;}
+         .card4{margin-right:0px;margin-left:-11px;height:490px;width:220px; font-size:9.6px;}
+         .fifth{margin-top:70px;}
+         .img5{margin-left: 910px;margin-top:-20px;width:260px; height:490px;margin-bottom:-216px;margin-left:203px;}
+         .card5{margin-right:0px;margin-left:-11px;height:490px;width:220px; font-size:10.3px;}
+     }
+    @media(max-width:503px){
+      .car{background-image:url('small7.gif');background-size: cover;}
+       .van{background-image:url('giphy.gif');background-size:cover;}
+      .maruti{background-image:url('giphy1.gif');background-size:cover;}
+    }
+    @media(min-width:504px){
+      .z{background-image: url('back12.jpg');}
+      .van{background-image: url('back10.jpg');}
+      .maruti{background-image: url('back11.jpg');}
+     }
+     @media(max-width:411px){
+    .foot{
+    background-color: chartreuse;
+    width:220px;
+    margin-left:75px;
+  font-size: 20px;
+  letter-spacing:14px;}
+  .logo{
+      width: 35px;
+      height: 35px;
+      margin-bottom:28px;
+      margin-left:-260px;
+    }
+    .head{
+      font-size: 50px;
+      margin-left: -10px;
+    }
+    .main{
+     margin-left:330px;
+    }
+    }
+    .item{margin-top:55px;
+      width:25px;
+      height:25px;
+      border-radius:25px;
+      margin-left: -10px;}
+      </style>
+      <script>
+     var i=0;
+     function buttononclick(){
+       i++;
+       document.getElementById('inc').value=i;
+     }
+function price1() {
+  var a = document.getElementById("pr1").value;
+   var total = parseFloat(a);
+  document.getElementById("total").value = total;
+}
+function price2() {
+  var b = document.getElementById("pr2").value;
+  var total = parseFloat(b);
+  document.getElementById("total").value = total;}
+
+  function price3() {
+  var c = document.getElementById("pr3").value;
+  var total = parseFloat(c);
+  document.getElementById("total").value = total;}
+
+  function price4() {
+  var d = document.getElementById("pr4").value;
+  var total = parseFloat(d);
+  document.getElementById("total").value = total;}
+
+  function price5() {
+  var e = document.getElementById("pr5").value;
+  var total = parseFloat(e);
+  document.getElementById("total").value = total;}
+   
+  function price6() {
+    var a = document.getElementById("pr1").value;
+    var b = document.getElementById("pr2").value;
+    var c = document.getElementById("pr3").value;
+    var d = document.getElementById("pr4").value;
+    var e = document.getElementById("pr5").value;
+    var total = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e);
+    document.getElementById("total").value = total;
+  }
+  function price7() {
+    var a = document.getElementById("pr1").value;
+    var b = document.getElementById("pr2").value;
+    var total = parseFloat(a) + parseFloat(b);
+    document.getElementById("total").value = total;}
+    function price8() {
+    var c = document.getElementById("pr3").value;
+    var d = document.getElementById("pr4").value;
+    var total = parseFloat(c) + parseFloat(d);
+    document.getElementById("total").value = total;}
+    function price9() {
+    var a = document.getElementById("pr1").value;
+    var e = document.getElementById("pr5").value;
+    var total = parseFloat(a) + parseFloat(e);
+    document.getElementById("total").value = total;}
+      </script>
+        <title> </title>
+    </head>
+<body >
+    <nav class="  navbar navbar-default navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <a href="#" class="navbar-brand">
+        <div  class="on" id="content container alpha">
+          <span class="slide">
+              <a href="#" onclick="openSlideMenu()">
+                  <i class="fas fa-bars fa-2x"></i>
+              </a>   
+          </span>
+          <div class=" nav d-flex flex-sm-row flex-column">
+            <div id="menu" class="nav va" style="scroll-behavior: unset;">
+              <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>  
+              <div class="container">
+                <div class="row">
+                <div class=" col-lg-8 col-md-6 col-sm-8 col-xs-12">
+              <div class="some1 a"><a>HOME</a><br> </div>
+              <div class="some2 b"><a class="some2 b" href="aboutus.html" style="text-decoration: none;">ABOUT</a><br> </div>
+              <div class="some3 c"><a class="some3 c" href="team.html" style="text-decoration: none;">TEAM</a><br> </div>
+              <div class="some4 d"><a class="some4 d" href="#ourmenu" style="text-decoration: none;">OURMENU</a><br> </div>
+              <div class="some5 e"><a class="some5 e" href="gallery.html" style="text-decoration: none;">GALLERY</a><br> </div>
+              <div class="some6 f"><a class="some6 f" href="contact.html" style="text-decoration: none;">CONTACT</a><br> </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-4 col-xs-0"></div>
+              </div> 
+         </div>
+          </div>
+          </div>
+      </a>
+      <div class="main">
+      <img src="cart2.png"  class="cart img-fluid">
+      <input type="text" class="text-center item" id="inc" value="0"></input>
+      </div>
+      <img src="add2.png"  class="add img-fluid" >
+    </nav>
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators ">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item z active car carss img-fluid"></div>
+        <div class="carousel-item van men img-fluid"></div>
+        <div class="carousel-item maruti women img-fluid "></div>
+      </div>
+      </div>
+ </header>
+ <div class="container">
+  <div class=" text-center row" style="margin-top:-660px;">
+    <div class="col-lg-3 col-md-1 col-sm-1 col-xs-0">
+      <div class=" text-light col-lg-6 col-md-10 col-sm-10 col-xs-12">
+      <h1 class="head">PIZZERIA</h1>
+      <h3 class="text-center foot">SPICYFOOD</h3>
+      <img  class="logo"src="kn.png" width=50 height=50 class="media">
+    </div>
+    <div class="col-lg-3 col-md-1 col-sm-1 col-xs-0"></div>
+</div>
+</div>
+ </div>
+ <a name="ourmenu" class="wait">
+ <h1 class="text-center a" style="color: black; letter-spacing:10px; margin-left: -160px;margin-top:630px; font-size:50px;">OUR</h1>
+    <h1 class="text-center .b" style="color: tomato; letter-spacing:10px; margin-left:180px; margin-top:-67px;font-size:50px;" >MENU</h1>
+         <div class="container-fluid "> 
+             <br><br><br><br><br>
+             </a>
+             <img src="menu.jpg" class="img1">
+             <div class="first">
+              <div class="card card1"><h4 class="font-weight-bold">PIZZERIA</h4>
+              <div class="card-body">
+                 <h2 class="card-title">NEAPOLITAN PIZZA</h2>
+                 <p class="card-text"><i> The genuine Neapolitan pizza dough consists of wheat flour (type 0 or 00, or a mixture of both), 
+                     natural Neapolitan yeast or brewer's yeast, salt and water. For proper results, strong flour with high protein content
+                    (as used for bread-making rather than cakes) must be used. The dough must be kneaded by hand or with a low-speed mixer.
+                     After the rising process, the dough must be formed by hand without the help of a rolling pin or other machine, 
+                     and may be no more than 3 millimeters (0.12 in) thick. The pizza must be baked for 60–90 seconds in a 485 °C (905 °F) wood fire oven.
+                     When cooked, it should be soft, elastic, tender and fragrant.</i> </p>
+                     <p class="card-text">Price : 599Rs.</p><button class="btn btn-warning font-weight-bold " id="pr1" value="599" onclick="buttononclick();onclick=price1();">ADD TO CART</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+            <div class="container-fluid">
+            <br><br><br>
+            <div class="second">
+            <img src="menu1.jpg" class="img2">
+             <div class="card card2"><h4 class="font-weight-bold">PIZZERIA</h4>
+             <div class="card-body">
+                <h2 class="card-title">SICILIAN PIZZA</h2>
+                <p class="card-text"><i> Sicilian pizza is pizza prepared in a manner that originated in Sicily, Italy. Sicilian pizza is also known as sfincione 
+                    (Sicilian language: sfincione [sfiŋˈtʃoːne]) or focaccia with toppings.This type of pizza became a popular dish in western Sicily 
+                    by the mid-19th century and was the type of pizza usually consumed in Sicily until the 1860s. The version with tomatoes was not 
+                    available prior to the 17th century.[2] It eventually reached North America in a slightly altered form, with thicker crust and a rectangular shape.
+               Traditional Sicilian pizza is often thick crusted and rectangular, but can also be round and similar to the Neapolitan pizza. It is often topped with onions, anchovies, tomatoes, herbs and strong cheese such as caciocavallo and toma</i>.</p>
+                    <p class="card-text">Price : 489Rs.</p><button class="btn btn-warning font-weight-bold" value="489" id="pr2" onclick="buttononclick();onclick=price2();">ADD TO CART</button>
+                   </div>
+             </div>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <br><br><br>
+            <div class="third">
+            <img src="menu3.jpg" class="img3">
+             <div class="card card3"><h4 class="font-weight-bold">PIZZERIA</h4>
+             <div class="card-body">
+                <h2 class="card-title">DETROIT PIZZA</h2>
+                <p class="card-text"><i>Detroit-style pizza is a deep-dish rectangular pizza with a thick crisp crust topped with Wisconsin brick cheese and a cooked tomato-based sauce.
+                    The dough typically has a hydration level of 70 percent or higher, which creates an open, porous, chewy crust.
+                    Traditionally the toppings are layered with the cheese below the sauce.Pepperoni is often placed directly on the crust,
+                     and other toppings may go directly on top of the cheese, but the cooked sauce is always the final layer and is applied in dollops or in "racing stripes," two or three lines of sauce.
+                     Some recipes call for the sauce to be added after the pizza comes out of the oven.The style is sometimes referred to as "red top" because the sauce is the final topping.</i></p>
+                    <p class="card-text">Price :689Rs.</p><button class="btn btn-secondary font-weight-bold"  id="pr3" value="689" onclick="buttononclick();onclick=price3();">ADD TO CART</button>
+                   </div>
+             </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+            <br><br><br>
+            <div class="fourth">
+            <img src="menu4.jpg" class="img4">
+             <div class="card card4"><h4 class="font-weight-bold">PIZZERIA</h4>
+             <div class="card-body">
+                <h2 class="card-title">CHICAGO PIZZA</h2>
+                <p class="card-text"><i>Chicago-style pizza is pizza prepared according to several different styles developed in Chicago.
+                     The most famous is deep-dish pizza. The pan in which it is baked gives the pizza its characteristically high edge which 
+                     provides ample space for large amounts of cheese and a chunky tomato sauce. Chicago-style pizza may be prepared in deep-dish 
+                     style and as a stuffed pizza.The thick layer of toppings used in deep-dish pizza requires a longer baking time (typically 30–45 minutes),
+                      which could burn cheese or other toppings if they were used as the top layer of the pizza. Because of this, the toppings are assembled 
+                      "upside-down" from their usual order on a pizza. </i></p>
+                    <p class="card-text">Price :399Rs.</p><button class="btn btn-secondary font-weight-bold" id="pr4" value="399" onclick="buttononclick();onclick=price4();" >ADD TO CART</button>
+                   </div>
+             </div>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <br><br><br>
+            <div class="fifth">
+            <img src="menu5.jpg"class="img5">
+             <div class="card card5"><h4 class="font-weight-bold">PIZZERIA</h4>
+             <div class="card-body">
+                <h2 class="card-title">GREEK PIZZA</h2>
+                <p class="card-text"><i>In the cuisine of the United States, Greek pizza is a style of pizza crust and preparation where the pizza is proofed and 
+                    cooked in a metal pan rather stretched to order and baked on the floor of the pizza oven.A shallow pan is used, unlike the deep pans used in Sicilian-American, Chicago, or Detroit-styled pizzas. Its crust is typically spongy, airy, and light, like focaccia but not as thick.[2] The crust is also rather oily, due to the coating of oil applied to the pan during preparation.
+                    In the United States, Greek-style pizza is common in New England and parts of eastern New York State.</i> </p>
+                    <p class="card-text">Price :899Rs.</p><button class="btn btn-warning font-weight-bold" id="pr5" value="899" onclick="buttononclick();onclick=price5();">ADD TO CART</button>
+                   </div>
+             </div>
+        </div>
+    </div>
+    <button class="btn btn-secondary font-weight-bold j" id="pr6" onclick="price6();">WANT TO ORDER ALL TYPES OF PIZZA OF QUANTITY 1 EACH?</button>
+    <button class="btn btn-secondary font-weight-bold aio" id="pr6" onclick="price7();">NEAPOLITAN PIZZA SICILIAN PIZZA </button>
+    <button class="btn btn-secondary font-weight-bold i" id="pr6" onclick="price8();">DETROIT PIZZA  CHICAGO PIZZA</button>
+    <button class="btn btn-secondary font-weight-bold bharat" id="pr6" onclick="price9();">NEAPOLITAN PIZZA GREEK PIZZA </button>
+    <br><br><br>
+    <form class="frm text-center">
+      <input id="total" class="text-center font-weight-bold border-left-10 pran" type=number >
+    </form>
+    <h2 class="data font-weight-bold">YOUR TOTAL CURRENT BILL IS : Rs. </h2>
+  
+          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+          <script src= "https://code.jquery.com/jquery-3.2.1.slim.min.js"> </script> 
+          <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> </script> 
+          <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script> -->
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>    
+</html>
